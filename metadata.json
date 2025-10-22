@@ -1,5 +1,5 @@
 {
-  "name": "Plinko Game",
+  "name": "Linko Game",
   "description": "A web-based Plinko game inspired by the popular casino game, allowing users to drop balls and watch them bounce to win prizes based on multipliers. Features adjustable risk levels, row counts, and live profit tracking.",
   "requestFramePermissions": []
 }
