@@ -35,7 +35,8 @@ const Ball = React.forwardRef<HTMLDivElement, { ball: BallType }>(({ ball }, ref
 ));
 
 // Component for the multiplier text animation
-const PayoutAnimation = ({ animation }: { animation: PayoutAnimationType }) => (
+// FIX: Explicitly type PayoutAnimation as a React.FC to ensure compatibility with React's special `key` prop when used in a list.
+const PayoutAnimation: React.FC<{ animation: PayoutAnimationType }> = ({ animation }) => (
     <div
         className="absolute text-white font-bold text-lg animate-fade-up-out pointer-events-none"
         style={{
@@ -51,7 +52,8 @@ const PayoutAnimation = ({ animation }: { animation: PayoutAnimationType }) => (
 );
 
 // New component for the bucket glow effect
-const BucketGlow = ({ effect }: { effect: GlowEffectType }) => (
+// FIX: Explicitly type BucketGlow as a React.FC to ensure compatibility with React's special `key` prop when used in a list.
+const BucketGlow: React.FC<{ effect: GlowEffectType }> = ({ effect }) => (
     <div
         className="absolute animate-bucket-glow pointer-events-none"
         style={{
